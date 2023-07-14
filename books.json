@@ -1,0 +1,195 @@
+{
+    "books": [
+      {
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "genre": "Fiction",
+        "publication_date": "April 10, 1925",
+        "image": "https://example.com/book1.jpg",
+        "reviews": [
+          {
+            "user_id": "user1",
+            "rating": 4.5,
+            "comment": "A timeless classic that captures the essence of the Jazz Age."
+          },
+          {
+            "user_id": "user2",
+            "rating": 3.8,
+            "comment": "The characters are intriguing, but the plot gets slow at times."
+          }
+        ]
+      },
+      {
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "genre": "Fiction",
+        "publication_date": "July 11, 1960",
+        "image": "https://example.com/book2.jpg",
+        "reviews": [
+          {
+            "user_id": "user3",
+            "rating": 4.9,
+            "comment": "A powerful story that tackles important social issues."
+          },
+          {
+            "user_id": "user4",
+            "rating": 4.2,
+            "comment": "The characters are unforgettable, but the ending left me wanting more."
+          }
+        ]
+      },
+      {
+        "title": "1984",
+        "author": "George Orwell",
+        "genre": "Fiction",
+        "publication_date": "June 8, 1949",
+        "image": "https://example.com/book3.jpg",
+        "reviews": [
+          {
+            "user_id": "user5",
+            "rating": 4.7,
+            "comment": "A chilling dystopian novel that still resonates today."
+          },
+          {
+            "user_id": "user6",
+            "rating": 4.5,
+            "comment": "Orwell's vision of a totalitarian society is both thought-provoking and terrifying."
+          }
+        ]
+      },
+      {
+        "title": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "genre": "Fiction",
+        "publication_date": "January 28, 1813",
+        "image": "https://example.com/book4.jpg",
+        "reviews": [
+          {
+            "user_id": "user7",
+            "rating": 4.8,
+            "comment": "A delightful romance with witty dialogue and memorable characters."
+          },
+          {
+            "user_id": "user8",
+            "rating": 4.0,
+            "comment": "I enjoyed the social commentary, but the pacing was a bit slow for my taste."
+          }
+        ]
+      },
+      {
+        "title": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "genre": "Fiction",
+        "publication_date": "July 16, 1951",
+        "image": "https://example.com/book5.jpg",
+        "reviews": [
+          {
+            "user_id": "user9",
+            "rating": 4.3,
+            "comment": "Holden Caulfield's voice is unique and relatable, making this a classic coming-of-age story."
+          },
+          {
+            "user_id": "user10",
+            "rating": 3.5,
+            "comment": "I found the protagonist to be too cynical, but the writing style was engaging."
+          }
+        ]
+      },
+      {
+        "title": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "genre": "Fantasy",
+        "publication_date": "September 21, 1937",
+        "image": "https://example.com/book6.jpg",
+        "reviews": [
+          {
+            "user_id": "user11",
+            "rating": 4.9,
+            "comment": "A delightful adventure filled with memorable characters and enchanting world-building."
+          },
+          {
+            "user_id": "user12",
+            "rating": 4.6,
+            "comment": "Tolkien's storytelling transports you to a magical realm. A must-read for fantasy fans."
+          }
+        ]
+      },
+      {
+        "title": "The Alchemist",
+        "author": "Paulo Coelho",
+        "genre": "Fiction",
+        "publication_date": "1988",
+        "image": "https://example.com/book7.jpg",
+        "reviews": [
+          {
+            "user_id": "user13",
+            "rating": 4.7,
+            "comment": "A beautiful and inspiring story that encourages self-discovery and following one's dreams."
+          },
+          {
+            "user_id": "user14",
+            "rating": 4.2,
+            "comment": "The symbolism is powerful, but some parts felt overly philosophical."
+          }
+        ]
+      },
+      {
+        "title": "Sapiens: A Brief History of Humankind",
+        "author": "Yuval Noah Harari",
+        "genre": "Non-Fiction",
+        "publication_date": "February 10, 2011",
+        "image": "https://example.com/book8.jpg",
+        "reviews": [
+          {
+            "user_id": "user15",
+            "rating": 4.8,
+            "comment": "A fascinating exploration of human history that provides new perspectives."
+          },
+          {
+            "user_id": "user16",
+            "rating": 4.5,
+            "comment": "Harari's ability to distill complex concepts into accessible language is commendable."
+          }
+        ]
+      },
+      {
+        "title": "The Girl on the Train",
+        "author": "Paula Hawkins",
+        "genre": "Mystery/Thriller",
+        "publication_date": "January 13, 2015",
+        "image": "https://example.com/book9.jpg",
+        "reviews": [
+          {
+            "user_id": "user17",
+            "rating": 4.2,
+            "comment": "A gripping psychological thriller with twists and turns that kept me guessing until the end."
+          },
+          {
+            "user_id": "user18",
+            "rating": 3.8,
+            "comment": "The multiple perspectives added depth, but the pacing felt uneven at times."
+          }
+        ]
+      },
+      {
+        "title": "Educated",
+        "author": "Tara Westover",
+        "genre": "Biography/Memoir",
+        "publication_date": "February 20, 2018",
+        "image": "https://example.com/book10.jpg",
+        "reviews": [
+          {
+            "user_id": "user19",
+            "rating": 4.7,
+            "comment": "A powerful memoir that showcases the transformative power of education and resilience."
+          },
+          {
+            "user_id": "user20",
+            "rating": 4.3,
+            "comment": "Westover's story is both heartbreaking and inspiring. Her writing is captivating."
+          }
+        ]
+      }
+    ]
+  }
+  

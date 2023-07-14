@@ -24,10 +24,23 @@ const run = async () => {
     app.get("/books", async (req, res) => {
       const cursor = bookCollection.find({});
       const books = await cursor.toArray();
-
       res.send({ status: true, data: books });
     });
-    
+
+    app.post("/book", async (req, res) => {
+      const book = req.body;
+      const result = await bookCollection.insertOne(book);
+      res.send({ status: true, data: result });
+    });
+
+    app.get("/book/:id", async (req, res) => {
+      const id = req.params.id;
+      const query = { _id: new ObjectId(id) }
+      const result = await bookCollection.findOne(query);
+      console.log(result);
+      res.send({ status: true, data: result });
+    });
+
   } finally {
   }
 };
