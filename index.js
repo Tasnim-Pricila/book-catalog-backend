@@ -18,9 +18,16 @@ const client = new MongoClient(uri, {
 
 const run = async () => {
   try {
-    
+    const db = client.db("book-catalog");
+    const bookCollection = db.collection("books");
 
-   
+    app.get("/books", async (req, res) => {
+      const cursor = bookCollection.find({});
+      const books = await cursor.toArray();
+
+      res.send({ status: true, data: books });
+    });
+    
   } finally {
   }
 };
