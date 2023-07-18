@@ -20,6 +20,7 @@ const run = async () => {
   try {
     const db = client.db("book-catalog");
     const bookCollection = db.collection("books");
+    const userCollection = db.collection("users");
 
     app.get("/books", async (req, res) => {
       const cursor = bookCollection.find({});
@@ -37,7 +38,7 @@ const run = async () => {
       const id = req.params.id;
       const query = { _id: new ObjectId(id) };
       const result = await bookCollection.findOne(query);
-      console.log(result);
+      // console.log(result);
       res.send({ status: true, data: result });
     });
 
@@ -54,9 +55,36 @@ const run = async () => {
       const updatedDoc = {
         $set: req.body,
       };
+      // console.log(updatedDoc);
       const result = await bookCollection.updateOne(query, updatedDoc);
       res.send({ status: true, data: result });
     });
+
+    app.post("/user", async (req, res) => {
+      const user = req.body;
+      const result = await userCollection.insertOne(user);
+      res.send({ status: true, data: result });
+    });
+
+    app.get("/user/:id", async (req, res) => {
+      const id = req.params.id;
+      const query = { _id: new ObjectId(id) };
+      const result = await userCollection.findOne(query);
+      // console.log(result);
+      res.send({ status: true, data: result });
+    });
+
+    app.patch("/user/:id", async (req, res) => {
+      const id = req.params.id;
+      const query = { _id: new ObjectId(id) };
+      const updatedDoc = {
+        $set: req.body,
+      };
+      // console.log(updatedDoc);
+      const result = await userCollection.updateOne(query, updatedDoc);
+      res.send({ status: true, data: result });
+    });
+
   } finally {
   }
 };
