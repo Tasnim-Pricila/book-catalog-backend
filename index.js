@@ -65,12 +65,23 @@ const run = async () => {
       const result = await userCollection.insertOne(user);
       res.send({ status: true, data: result });
     });
-
-    app.get("/user/:id", async (req, res) => {
-      const id = req.params.id;
-      const query = { _id: new ObjectId(id) };
-      const result = await userCollection.findOne(query);
-      // console.log(result);
+    app.get("/users", async (req, res) => {
+      const cursor = userCollection.find({});
+      const result = await cursor.toArray();
+      res.send({ status: true, data: result });
+    });
+   
+    // app.get("/user/:id", async (req, res) => {
+    //   const id = req.params.id;
+    //   const query = { _id: new ObjectId(id) };
+    //   const result = await userCollection.findOne(query);
+    //   res.send({ status: true, data: result });
+    // });
+    app.get("/user/:email", async (req, res) => {
+      const email = req.params.email;
+      // const query = { email: new ObjectId(id) };
+      const result = await userCollection.findOne({email: email});
+      console.log(result);
       res.send({ status: true, data: result });
     });
 
